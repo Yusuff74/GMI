@@ -1,0 +1,735 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: center;
+    background-image: url(https://glowingmindsinitiatives.org/images/banner.jpg);
+    background-size: cover;
+  }
+  
+  .logo {
+    margin-left: 2rem;
+    margin-right: 3.5rem;
+  }
+  
+  .nav-list {
+    margin-top: 1.3rem;
+  }
+  
+  .header-section nav {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2rem 0;
+  }
+  
+  .header-section nav ul li {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  .header-section nav ul li:not(:last-child) {
+    margin-right: 1.8rem;
+  }
+  
+  .header-section nav ul li a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+  
+  .active,
+  .header-section nav ul li a:hover {
+    background: #E1E1FF;
+    color: #000 !important;
+    padding: .25rem 1rem;
+    border-radius: 1.3rem;
+  }
+  
+  .banner-text {
+    margin: 6rem auto;
+    width: 70%;
+  }
+  
+  .banner-text h3 {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    word-spacing: .7rem;
+    color: #fff;
+  }
+  
+  .banner-button {
+    text-align: center;
+  }
+  
+  .banner-button a {
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    border-radius: 1.3rem;
+    font-size: .8rem;
+    font-weight: 600;
+  }
+  
+  .banner-button a:first-child {
+    background: #007bff;
+  }
+  
+  .banner-button a:last-child {
+    background: #E1E1FF;
+    color: #000;
+  }
+  
+  .year,
+  .value,
+  .theme {
+    margin: 4rem 0;
+    text-align: center;
+  }
+  
+  .year h3,
+  .val-title h2,
+  .theme h2,
+  .project h3,
+  .partners-title h2 {
+    color: #007bff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  
+  .year p,
+  .val-title p,
+  .project p,
+  .partners-title p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .col-img {
+    width: 15rem;
+    height: 10rem;
+  }
+  
+  .vision h5 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+  }
+  
+  .border-bottom {
+    display: block;
+    width: 8.75rem;
+    height: 1.4px;
+    background: #007bff;
+    margin-bottom: .5rem;
+  }
+  
+  .col-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .vision p {
+    line-height: 1.7;
+    font-size: .9rem;
+    color: #333;
+  }
+  
+  .vision a,
+  .impacting a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem 2.1rem;
+    font-size: .95rem;
+    font-weight: 600;
+    color: #fff;
+    background: #3366FF;
+    border: 1px solid #159b15;
+    border-radius: 1.8rem;
+  }
+  
+  .value {
+    margin-top: 15rem;
+  }
+  
+  .fa {
+    font-size: 3rem;
+  }
+  
+  .gray-border {
+    border-right: 1px solid #eee;
+  }
+  
+  .gray-border:nth-child(4),
+  .gray-border:nth-child(5),
+  .gray-border:nth-child(6) {
+    border-top: 1px solid #eee;
+  }
+  
+  .theme img {
+    width: 9rem;
+    height: 9rem;
+  }
+  
+  .col h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #000;
+  }
+  
+  .slide-img .container-fluid {
+    position: relative;
+  }
+  
+  .slide-image {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    padding: 0 !important;
+    float: none;
+    opacity: 0;
+    z-index: 1;
+    transition: all 5s ease-in-out;
+  }
+  
+  .slide-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #159b15, #fcff3b);
+    opacity: .8;
+  }
+  
+  .active-slide {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    float: left;
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .sld-img {
+    background: url('https://glowingmindsinitiatives.org/images/g4.jpg');
+  }
+  
+  .slide1 {
+    background: url('https://glowingmindsinitiatives.org/images/g4.jpg');
+  }
+  
+  .slide2 {
+    background: url('https://glowingmindsinitiatives.org/images/g1.jpg');
+  }
+  
+  .slide3 {
+    background: url('https://glowingmindsinitiatives.org/images/g3.jpg');
+  }
+  
+  .impact {
+    position: absolute;
+    top: 45%;
+    left: 1%;
+    transform: rotate(-90deg);
+    z-index: 2;
+  }
+  
+  .impact h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: capitalize;
+  }
+  
+  .states {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 60%;
+    z-index: 3;
+  }
+  
+  .states h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-bottom: 1rem;
+    text-shadow: 1px 1px 1px #000;
+    border-bottom: 4px solid #15b915;
+  }
+  
+  .states p {
+    padding: 1em;
+    background: #fff;
+  }
+  
+  .impacting .container-fluid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 21rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url('https://glowingmindsinitiatives.org/images/inner-banner.jpg');
+  }
+  
+  .impacting .container-fluid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(206, 206, 255, 0.58);
+  }
+  
+  .impacting h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  
+  .impacting a {
+    margin-top: .5rem;
+    z-index: 3;
+  }
+  
+  .project {
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  .project p {
+    text-transform: capitalize;
+  }
+  
+  .project .col {
+    padding: 0 !important;
+  }
+  
+  .project .img {
+    position: relative;
+  }
+  
+  .project .sleta {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    background: #E1E1FF;
+    color: #000;
+    padding: 0 .75rem;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    border-radius: .625rem;
+    border: solid #3366FF;
+    border-width: 2px 2px 0;
+  }
+  
+  .project .row {
+    margin-top: 3rem;
+  }
+  
+  .project .card-body {
+    background: #eae9ea;
+  }
+  
+  .project h5 {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #007bff;
+  }
+  
+  .project p {
+    line-height: 1.7;
+    font-size: .8rem;
+    font-weight: 500;
+  }
+  
+  .project .card:first-child {
+    margin-right: 2rem;
+  }
+  
+  .project a {
+    background: #E1E1FF;
+    color: #000;
+    font-weight: 600;
+    padding: 5px 1.8rem;
+    border-radius: 1.87rem;
+    letter-spacing: 1px;
+  }
+  
+  .partners {
+    background: url('https://glowingmindsinitiatives.org/images/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+  }
+  
+  .partners::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .partners-title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .partners p {
+    color: #fff;
+    line-height: 1.7;
+    font-size: .8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .partners h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  hr {
+    border: 1px solid rgba(51, 102, 255);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  marquee {
+    margin-bottom: 3rem;
+  }
+  
+  .partners h3,
+  .partners h4,
+  .partners a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+  
+  .copy-right {
+    text-align: center;
+    text-transform: capitalize;
+    background: #3366FF;
+    color: #fff;
+  }
+  
+  .copy-right p {
+    padding: 1rem;
+  }
+  
+  .copy-right a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .mar-top-3 {
+    margin-top: 3rem !important;
+  }
+  
+  .mar-bot-3 {
+    margin-bottom: 3rem !important;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .no-scroll {
+      overflow: hidden;
+    }
+  
+    .logo h3 {
+      font-size: 1rem;
+    }
+  
+    .header-section nav {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .mobile-menu {
+      display: block;
+      margin-right: .5rem;
+      margin-top: 1rem;
+    }
+  
+    .nav-list {
+      display: none;
+    }
+  
+    .header-section nav {
+      margin-bottom: .5rem;
+    }
+  
+    .mobile-list {
+      display: block;
+      background-color: rgba(0, 0, 0, .5);
+      border-radius: 5px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 3rem);
+      padding: 1.625rem;
+      margin-top: 1.5rem;
+    }
+  
+    .mobile-list a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0.625rem;
+      font-size: 1rem;
+    }
+  
+    .header-menu span {
+      display: block;
+      width: 1.625rem;
+      height: .2rem;
+      background-color: #fff;
+      transition: all 300ms ease-in-out;
+      transform-origin: 2px 2px;
+    }
+  
+    .header-menu span:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  
+    .open>span:first-child {
+      transform: rotate(45deg);
+    }
+  
+    .open>span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .open>span:last-child {
+      transform: rotate(-45deg);
+    }
+  
+    .banner-text {
+      margin-top: .2rem;
+      padding: 0 !important;
+    }
+  
+    .banner-text h3 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      width: 100%;
+    }
+  
+    .banner-button {
+      margin-top: .4rem;
+    }
+  
+    .year {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .year p {
+      font-size: .9rem;
+    }
+  
+    .col-img {
+      width: 17rem;
+      height: 14rem;
+      transform: scale(0.95);
+    }
+  
+    .vision h5 {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  
+    .mar-top-3,
+    .project {
+      margin-top: 1rem !important;
+    }
+  
+    .mar-bot-3,
+    marquee {
+      margin-bottom: 1rem !important;
+    }
+  
+    .theme {
+      margin-bottom: 0 !important;
+    }
+  
+    .vision span {
+      height: 2px;
+    }
+  
+    .value,
+    .theme {
+      margin-top: 2rem;
+    }
+  
+    .slide-image {
+      max-height: 18.75rem;
+      width: 100%;
+      background-size: cover;
+    }
+  
+    .impact {
+      left: -9%;
+    }
+  
+    .impact h3,
+    .states h3,
+    .impacting h3 {
+      font-size: 1.2rem;
+    }
+  
+    .project-text h3,
+    .project h5 {
+      font-size: .9rem;
+    }
+  
+    .project-text p {
+      text-align: center !important;
+      font-size: .6rem;
+      font-weight: 600;
+    }
+  
+    .impacting a {
+      padding: 0.3rem 1.4rem;
+      font-size: .5rem;
+    }
+  
+    .impacting .container-fluid {
+      height: 12rem;
+      background-size: cover;
+    }
+  
+    .states {
+      top: 10%;
+    }
+  
+    .states p {
+      font-size: .7rem;
+      padding: .5rem;
+    }
+  
+    .theme-title h2 {
+      font-size: 1rem;
+    }
+  
+    .theme img {
+      width: 9rem;
+      height: 9rem;
+    }
+  
+    .project .card {
+      width: 100%;
+    }
+  
+    .project .card:first-child {
+      margin-bottom: 1.7rem;
+    }
+  
+    .project img {
+      width: 100%;
+      height: 8rem;
+    }
+  
+    .project .sleta {
+      top: -0.7rem;
+      font-size: .7rem;
+      line-height: 1.5rem;
+    }
+  
+    .project .pro-600 {
+      font-weight: 600;
+      font-size: .6rem;
+    }
+  
+    .project p,
+    .project a {
+      font-size: .6rem;
+      text-align: left;
+    }
+  
+    .partners {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  
+    .partners-title {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .partners p {
+      font-size: .7rem;
+    }
+  
+    .partners h2 {
+      font-size: 1rem;
+    }
+  
+    .partners h3,
+    .partners a,
+    .partners h4 {
+      font-size: .8rem;
+    }
+  
+    .copy-right {
+      font-size: .6rem;
+    }
+  }
