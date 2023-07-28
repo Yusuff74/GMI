@@ -141,3 +141,326 @@
     font-weight: 500;
     margin-bottom: .5rem;
 }
+.initiatives{
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.val-title h2{
+    text-align: center;
+    color: #007bff;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.val-title p{
+    text-align: center;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.fa {
+    font-size: 6rem;
+  }
+  .gray-border p{
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+  .gray-border {
+    border-right: 1px solid #eee;
+  }
+  
+  .gray-border:nth-child(4),
+  .gray-border:nth-child(5),
+  .gray-border:nth-child(6) {
+    border-top: 1px solid #eee;
+  }
+
+  .slide-img .container-fluid {
+    position: relative;
+  }
+  
+  .slide-image {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    padding: 0 !important;
+    float: none;
+    opacity: 0;
+    z-index: 1;
+    transition: all 5s ease-in-out;
+  }
+  
+  .slide-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #159b15, #fcff3b);
+    opacity: .8;
+  }
+  
+  .active-slide {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    float: left;
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .sld-img {
+    background: url('https://glowingmindsinitiatives.org/images/g4.jpg');
+  }
+  
+  .slide1 {
+    background: url('https://glowingmindsinitiatives.org/images/g4.jpg');
+  }
+  
+  .slide2 {
+    background: url('https://glowingmindsinitiatives.org/images/g1.jpg');
+  }
+  
+  .slide3 {
+    background: url('https://glowingmindsinitiatives.org/images/g3.jpg');
+  }
+
+  .impact {
+    position: absolute;
+    top: 45%;
+    left: 1%;
+    transform: rotate(-90deg);
+    z-index: 2;
+  }
+  
+  .impact h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: capitalize;
+  }
+  
+  .states {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 60%;
+    z-index: 3;
+  }
+  
+  .states h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-bottom: 1rem;
+    text-shadow: 1px 1px 1px #000;
+    border-bottom: 4px solid #15b915;
+  }
+  
+  .states p {
+    padding: 1em;
+    background: #fff;
+  }
+
+  .partners {
+    background: url('https://glowingmindsinitiatives.org/images/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+  }
+  
+  .partners::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .partners-title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .partners p {
+    color: #fff;
+    line-height: 1.7;
+    font-size: .8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .partners h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  hr {
+    border: 1px solid rgba(51, 102, 255);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .partners h3,
+  .partners h4,
+  .partners a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+  
+  .copy-right {
+    text-align: center;
+    text-transform: capitalize;
+    background: #3366FF;
+    color: #fff;
+  }
+  
+  .copy-right p {
+    padding: 1rem;
+  }
+  
+  .copy-right a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .no-scroll {
+      overflow: hidden;
+    }
+  
+    .logo h3 {
+      font-size: 1rem;
+    }
+  
+    .header-section nav {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .mobile-menu {
+      display: block;
+      margin-right: .5rem;
+      margin-top: 1rem;
+    }
+  
+    .nav-list {
+      display: none;
+    }
+  
+    .header-section nav {
+      margin-bottom: .5rem;
+    }
+  
+    .mobile-list {
+      display: block;
+      background-color: rgba(0, 0, 0, .5);
+      border-radius: 5px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 3rem);
+      padding: 1.625rem;
+      margin-top: 1.5rem;
+    }
+  
+    .mobile-list a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0.625rem;
+      font-size: 1rem;
+    }
+  
+    .header-menu span {
+      display: block;
+      width: 1.625rem;
+      height: .2rem;
+      background-color: #fff;
+      transition: all 300ms ease-in-out;
+      transform-origin: 2px 2px;
+    }
+  
+    .header-menu span:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  
+    .open>span:first-child {
+      transform: rotate(45deg);
+    }
+  
+    .open>span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .open>span:last-child {
+      transform: rotate(-45deg);
+    }
+  
+    .about {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sub-title{
+        text-align: center;
+    }
+
+    .about p {
+      font-size: .9rem;
+    }
+  
+    .col-img {
+      width: 17rem;
+      height: 14rem;
+      transform: scale(0.95);
+    }
+  
+  
+    .mar-top-3{
+      margin-top: 1rem !important;
+    }
+  
+    .mar-bot-3 {
+      margin-bottom: 1rem !important;
+    }
+  
+    .slide-image {
+      max-height: 18.75rem;
+      width: 100%;
+      background-size: cover;
+    }
+  
+    .impact {
+      left: -9%;
+    }
+  
+    .impact h3,
+    .states h3 {
+      font-size: 1.2rem;
+    }
+  
+    .copy-right {
+      font-size: .6rem;
+    }
+  }
+ 
