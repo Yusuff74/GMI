@@ -1,6 +1,7 @@
 const openMenu = document.getElementById('open-menu')
 const body = document.querySelector('body')
 const mobileMenu = document.querySelector('.mobile-list')
+const linkEls = document.querySelectorAll('.link')
 
 
 mobileMenu.style.display = 'none'
@@ -17,6 +18,24 @@ openMenu.onclick = () => {
         mobileMenu.style.display = 'block'
     }
 }
+
+linkEls.forEach(linkEl => {
+    linkEl.onclick = () => {
+        const elementId = linkEl.id;
+        const elements = document.querySelectorAll('.display');
+
+        // Remove 'display' class from all elements
+        elements.forEach(element => {
+            element.classList.remove('display');
+        });
+
+        // Add 'display' class to the clicked element
+        const element = document.querySelector(`.${elementId}`);
+        element.classList.add('display');
+
+    };
+});
+
 
 
 let count = 1;

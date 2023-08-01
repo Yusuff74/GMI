@@ -107,7 +107,7 @@
     transform: scale(0.9);
   }
 
-.home-link {
+  .home-link {
     text-align: center;
     text-transform: capitalize;
     background: #3366FF;
@@ -130,97 +130,57 @@
     color: #E1E1FF;
 }
 
-.about {
+.year {
     margin: 4rem 0;
-}
-
-.sub-title h2 {
     text-align: center;
-    color: #007bff;
-    font-size: 1.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.sub-title p {
-    margin: 0;
-    color: #333;
-    font-size: 0.95em;
-    font-weight: 600;
-    line-height: 1.7;
-}
-
-.sub-title p span {
-    font-weight: 800;
-}
-
-.mar-top-3 {
-    margin-top: 4rem !important;
-}
-
-.mar-top-6 {
-    margin-top: 7rem !important;
-}
-
-.mar-bot-3 {
-    margin-bottom: 3rem !important;
-}
-
-.border-bottom {
-    display: block;
-    width: 9.5rem;
-    height: 2px;
-    background: #007bff;
-    margin-bottom: 1.5rem;
-}
-
-.col-img {
-    width: 18.75rem;
-    height: 12.5rem;
-}
-
-.more-about h5 {
-    text-transform: capitalize;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: .5rem;
-}
-.initiatives{
-    text-align: center;
-    margin-top: 15rem;
-}
-
-.val-title h2{
-    text-align: center;
-    color: #007bff;
-    font-size: 2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.val-title p{
-    text-align: center;
-    color: #333;
-    font-size: 1.2em;
-    font-weight: 600;
-    line-height: 1.7;
-}
-
-.fa {
-    font-size: 6rem;
-  }
-  .gray-border p{
-    font-size: 1.5rem;
-    font-weight: 200;
-  }
-  .gray-border {
-    border-right: 1px solid #eee;
   }
   
-  .gray-border:nth-child(4),
-  .gray-border:nth-child(5),
-  .gray-border:nth-child(6) {
-    border-top: 1px solid #eee;
+  .year h3 {
+    color: #007bff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  
+  .year p {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .col-img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .vision h5 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+  }
+  
+  .border-bottom {
+    display: block;
+    width: 13.2rem;
+    height: 2px;
+    background: #007bff;
+    margin-bottom: .5rem;
+  }
+
+  .vision p {
+    line-height: 1.7;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .mar-top-3 {
+    margin-top: 3rem !important;
+  }
+
+  .mar-bot-3 {
+    margin-bottom: 7rem !important;
   }
 
   .slide-img .container-fluid {
@@ -458,17 +418,13 @@
     .open>span:last-child {
       transform: rotate(-45deg);
     }
-  
-    .about {
+
+    .year {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
     }
-
-    .sub-title{
-        text-align: center;
-    }
-
-    .about p, .gray-border p {
+  
+    .year p {
       font-size: .9rem;
     }
   
@@ -478,24 +434,17 @@
       transform: scale(0.95);
     }
   
-  .fa{
-    font-size: 2rem;
-  }
-    .mar-top-3, .mar-top-6{
+    .vision h5 {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    .mar-top-3 {
       margin-top: 1rem !important;
     }
-
-    .initiatives p{
-        font-size: 1.2rem;
-        font-weight: 300;
-    }
-
+  
     .mar-bot-3 {
       margin-bottom: 1rem !important;
-    }
-  
-    .initiatives{
-      margin-top: 2rem;
     }
 
     .slide-image {

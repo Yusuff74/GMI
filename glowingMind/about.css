@@ -22,6 +22,48 @@
     margin-right: 3.5rem;
 }
 
+#drop-down{
+  position: relative;
+  color: #fff;
+}
+#drop-down i{
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+}
+
+.link{
+  margin-bottom: 1rem;
+}
+
+.team, .sdgs, .career{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 10rem;
+  background: #fff;
+  padding: 1rem;
+  float: none;
+  margin-top: 1rem;
+}
+
+.display{
+  display: block;
+}
+
+.team a, .sdgs a, .career a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: .8rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
 .nav-list {
     padding-top: .6rem;
 }
@@ -45,7 +87,7 @@
     margin-right: 1.8rem;
 }
 
-.header-section nav ul li a {
+.header-section .nav-anchor{
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
@@ -56,12 +98,13 @@
 }
 
 .active,
-.header-section nav ul li a:hover {
+  .header-section nav div a:hover, .link:hover {
     background: #E1E1FF;
     color: #000 !important;
     padding: .25rem 1rem;
     border-radius: 1.3rem;
-}
+    transform: scale(0.9);
+  }
 
 .home-link {
     text-align: center;
