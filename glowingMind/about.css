@@ -456,6 +456,40 @@
     .open>span:last-child {
       transform: rotate(-45deg);
     }
+
+    #drop-down i {
+      top: 2rem;
+    }
+
+    .teams, .sdgss, .careers{
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 10rem;
+      background: #fff;
+      padding: 1rem;
+      float: none;
+      margin-top: 1rem;
+      z-index: 999999999;
+      overflow: hidden;
+      clear: both;
+    }
+
+    .teams a, .sdgss a, .careers a{
+      display: block;
+      text-decoration: none;
+      color: #000;
+      font-size: .8rem;
+      font-weight: 600;
+      text-align: center;
+      text-transform: capitalize;
+      white-space: nowrap;
+    }
+
+    .display{
+      display: block;
+    }
   
     .about {
       margin-top: 1.5rem;
