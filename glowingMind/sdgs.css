@@ -130,12 +130,12 @@
     color: #E1E1FF;
 }
 
-.year {
+.year, .contact-header {
     margin: 4rem 0;
     text-align: center;
   }
   
-  .year h3 {
+  .year h3, .contact-header h3 {
     color: #007bff;
     text-align: center;
     font-size: 2.5rem;
@@ -143,10 +143,97 @@
     text-transform: uppercase;
   }
   
-  .year p {
+  .year p, .contact-header p {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
+  }
+
+ .contact span {
+    color: #3366FF;
+    font-size: 1.6rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1.2rem;
+    background-color: #eee;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    box-shadow: 5px 10px 10px 0px rgba(216, 216, 216, 0.78);
+  }
+
+  .mar-l{
+    margin-left: 5.7rem !important;
+    margin-bottom: 1.8rem;
+  }
+
+  .contact-i, .contact-address {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .contact-icon{
+    margin: 0 auto;
+  }
+
+  .mail a, .mail p{
+    text-decoration: none;
+    text-align: center;
+    color: #3b3a3a;
+    font-size: 1.2rem;
+    letter-spacing: .6px;
+  }
+
+  .head h4 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #007bff;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .form{
+    padding: 2.2rem;
+    border: 20px solid #eee;
+    border-radius: 1.3rem;
+  }
+
+  .form-group{
+    margin-top: 2rem;
+  }
+
+  .form label{
+    display: inline-block;
+    margin-bottom: .7rem;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .form input{
+    padding: 1rem 1.3rem;
+    border: 1px solid #dbdbdb;
+    letter-spacing: 1px;
+    box-shadow: 2px 8px 10px 0px rgba(50, 46, 46, 0.23);
+  }
+
+  .form textarea{
+    height: 12rem;
+    resize: none;
+  }
+
+  .form button{
+    font-weight: 800;
+  }
+
+  .iframe{
+    width: 100%;
+    min-height: 500px;
+    border: 3px solid rgb(51,102,255);
+    margin: 2.8rem 0;
+    padding: .8rem;
   }
 
   .col-img {
@@ -453,13 +540,21 @@
       display: block;
     }
 
-    .year {
+    .year, .contact {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
     }
   
-    .year p {
+    .year p, .contact p {
       font-size: .9rem;
+    }
+
+    .mar-l{
+      margin-left: 8.8rem;
+    }
+
+    .contact span{
+      margin-left: 3rem;
     }
   
     .col-img {
